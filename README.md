@@ -15,3 +15,11 @@ Para la interfaz web puede crearla con el conocimiento adquirido previamente en 
 Implementar el borrado lógico y físico.
 No olvide documentar el código.
 El código a entregar es tanto del frontend como del backend
+
+# Se Entrega:
+
+1 - Script para creacion de la base de datos
+2- Back en Java con SpringBoot
+3- Frontend con HTML, CSS3 y JavaScript
+
+Entregado por: LUIS MIGUEL RUSSO TINJACA
