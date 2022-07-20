@@ -18,8 +18,8 @@ El código a entregar es tanto del frontend como del backend
 
 # Se Entrega:
 
-1 - Script para creacion de la base de datos
-2- Back en Java con SpringBoot
-3- Frontend con HTML, CSS3 y JavaScript
+1. Script para creacion de la base de datos
+2. Back en Java con SpringBoot
+3. Frontend con HTML, CSS3 y JavaScript
 
-Entregado por: LUIS MIGUEL RUSSO TINJACA
+#Entregado por: LUIS MIGUEL RUSSO TINJACA
