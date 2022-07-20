@@ -1,6 +1,6 @@
 # Taller8-QSL-CRUD
 
-##Taller 2 de SQL: Creando un CRUD
+Taller 2 de SQL: Creando un CRUD
 Usando el conocimiento adquirido en clase, realizar un CRUD de un sistema para poder llevar el control contactos telefónicos teniendo en cuenta los siguientes datos para dichos contactos:
 
 Nombre completo
