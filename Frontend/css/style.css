@@ -1,0 +1,118 @@
+#body{
+    width: 100%;
+    background-size: 100%;
+    background-image: url('https://img.freepik.com/vector-gratis/fondo-abstracto-azul-formas-geometricas_1035-17545.jpg?t=st=1658340584~exp=1658341184~hmac=22a687f19887aaf19dafd479c160878a6d35f653be360b7471e461777ea0da58&w=900');
+    
+}
+
+#mainTitle {
+    
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #2703c8, #0087f5);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  
+  
+input[type=text]{
+    padding:6px;
+    border: 2px solid rgba(21, 0, 255, 0.354);
+}
+
+.topRow{
+  background-color: #004ba0;
+  color: black;
+  font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+    color: #ffffff;
+    
+  }
+  tr{
+    background-color: #63a4ff;
+    ;
+  }
+  tr:nth-child(even){background-color: #1976d2}
+  
+  th {
+    background-color: #1504aa;
+    color: #1504aa;
+  }
+
+
+  .modal-body{
+    width: 400px;
+    align-content: center;
+  }
+
+  input{
+    width: 100%;
+  }
+
+
+
+
+  /* The Modal (background) */
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content2 {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/*botones del edit*/
+
+#btnUpdate , #btnClose, #btnEdit {
+  margin-top: 10px;
+  
+}
+
+.btn-warning{
+  margin-bottom: 10px;
+  
+}
+
