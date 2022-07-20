@@ -10,6 +10,14 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import java.io.Serializable;
 
+/**
+ * Object Relational Mapping (ORM)
+ *
+ * @version 1.0.0 2022/07/20
+ * @author luis miguel russo tinjaca
+ * @since 1.0.0
+ */
+
 @Data
 @Entity
 @Table(name = "contacto")

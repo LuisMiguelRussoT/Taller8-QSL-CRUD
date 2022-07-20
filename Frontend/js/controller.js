@@ -1,3 +1,7 @@
+/**
+ * Function to create a new contact
+ */
+
 function crear() {
 
     let infoName = document.getElementById("infoName").value;
@@ -31,7 +35,10 @@ function crear() {
 }
 
 
-// arreglar mas tarde
+/**
+ * Function to clear form after create contact
+ */
+
 function clear() {
     document.getElementById("infoName").value = "";
     document.getElementById("infoCell").value = "";
@@ -40,6 +47,9 @@ function clear() {
 
 }
 
+/**
+ * Function to clear form after create contact
+ */
 
 function traer() {
 
@@ -154,6 +164,10 @@ function traer() {
 
 }
 
+/**
+ * Function to update contact
+ */
+
 function updateContact(id,body) {
     console.log("body",body);
 
@@ -161,10 +175,18 @@ function updateContact(id,body) {
 
 }
 
+/**
+ * Function to delete contact
+ */
+
 function deleteContact(id) {
     axios.delete('http://localhost:9090/contact/' + id).then(resp => { traer() });
 
 }
+
+/**
+ * Function to delete contact
+ */
 
 function deleteContactLogic(id) {
     console.log('id :>> ', id);

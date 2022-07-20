@@ -24,6 +24,10 @@ public class ContactController {
 
     private Response response = new Response();
 
+    /**
+     * Route index to verifi response
+     * @return response
+     */
     @GetMapping(path = "/")
     public Map<String, String> index() {
         var respuesta = new HashMap<String, String>();
@@ -31,6 +35,10 @@ public class ContactController {
         return respuesta;
     }
 
+    /**
+     * route to list all contacts in DB
+     * @return list of contacts
+     */
 
     @GetMapping(path = "/contacts")
     public List<Contact> listado() {
@@ -39,6 +47,12 @@ public class ContactController {
 
 
     }
+
+    /**
+     * route  to create contact in DB
+     * @param contact recive object class contact
+     * @return reponse if contact already exist or if there is some issue
+     */
 
     @PostMapping(path = "/contact")
     public ResponseEntity<Response> create(@RequestBody Contact contact) {
@@ -60,6 +74,13 @@ public class ContactController {
         }
     }
 
+
+    /**
+     * Route to delete contact form DB
+     * @param contact recive object class contact
+     * @return contact to delete
+     */
+
     @DeleteMapping(path = "/contact/{id}")
     public ResponseEntity<Contact> erase(Contact contact) {
         log.info("Contacto a borrar: {}", contact);
@@ -67,6 +88,13 @@ public class ContactController {
         return new ResponseEntity<>(contact, HttpStatus.OK);
     }
 
+
+    /**
+     * Route to update contact
+     * @param contact recive object class contact
+     * @param id id of the object to update
+     * @return contact updated
+     */
     @PostMapping(path = "/contact/{id}")
     public ResponseEntity<Contact> update(@RequestBody Contact contact, @PathVariable("id") Long id) {
         log.info("Contacto a modificar: {}", contact);
@@ -101,6 +129,14 @@ public class ContactController {
         contactService.updateDob(id, contact);
         return new ResponseEntity<>(contact, HttpStatus.OK);
     }
+
+
+    /**
+     * route to realice logic delete
+     * @param contact recive object class contact
+     * @param id id of the object
+     * @return contact logic delete
+     */
     @PostMapping(path = "/contact/logicDelete/{id}")
     public ResponseEntity<Contact> logicDelete(@RequestBody Contact contact, @PathVariable("id") Long id) {
         log.info("Modify logicDelete: {}", contact);
